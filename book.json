@@ -1,0 +1,15 @@
+{
+	"gitbook": "2.x.x",
+        "plugins": [],
+		"links": {
+			"sidebar": {
+		        "Contact us / Support": "https://www.deepin.com/"
+		                    }
+	         	 },
+        "pluginsConfig": {},
+	"pdf": {
+		 "paperSize": "a4",
+	         "headerTemplate": "_TITLE_",
+	         "footerTemplate": "版权所有©武汉深之度科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.deepin.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第 _PAGENUM_ 页"
+               }
+}
