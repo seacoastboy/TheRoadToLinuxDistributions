@@ -26,12 +26,55 @@
 
 # 具体实例
 
+以基于debian为实例，
+
 ## 创建规范
+
+* 定义工具链
+* 定义软件包命名方式
+* 定义生命周期
 
 ## 同步上游
 
+* conf/distributions
+```
+Origin: deepin
+Label: Deepin Linux Server Main Repo
+Codename: kui
+Suite: stable
+Architectures: mipsel mips64el source
+Components: main non-free contrib
+UDebComponents: main
+Contents: udebs percomponent allcomponents
+Description: Deepin Linux Server 
+SignWith: Deepin Server kui Automatic Signing Key <packages@linuxdeepin.com> 
+Log: orion.log
+Update: upstream-main
+```
+
+* conf/updates
+
+```
+Name: upstream-main
+Method: http://sh.deepin.io:6500/mips64el-deepin/ 
+Suite: kui
+Components: main contrib non-free
+Architectures: mips64el source
+GetInRelease: yes
+FilterSrcList: install filterlist/debian-stretch-src
+VerifyRelease: blindtrust
+```
+
+```
+reprepro -V update
+```
+
 ## 管理源码与打包
+
 
 ## 管理仓库
 
+
 ## 制作安装介质
+
+
