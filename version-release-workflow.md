@@ -248,7 +248,4 @@ xorriso -as mkisofs -r -V 'Linux Server'                                        
     -boot-load-size 4 -boot-info-table -eltorito-alt-boot                                                 \
     -e boot/grub/efi.img -no-emul-boot -isohybrid-gpt-basdat -isohybrid-apm-hfsplus iso-build/         \
     -o Linux-server-minimal-amd64-${BuildID}.iso
-
 ```
-
-
