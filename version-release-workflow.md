@@ -190,7 +190,7 @@ done
    * debian-installer/build/sources.list.udeb 添加如下内容
 ```
 deb [trusted=yes] copy:/data/codes/project/debian-installer/build/ localudebs/
-deb http://10.1.10.21/server-dev kui main/debian-installer
+deb http://mirrors.ustc.edu.cn/debian/ stretch main/debian-installer 
 ```
 其中 `/data/codes/project/debian-installer/build/` 请根据实际位置对应修改，执行如下命令完成编译，目标文件在 `build/dest/` 目录下
 ```
